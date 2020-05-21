@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document upload</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/js/bootstrap.min.js" rel="stylesheet">
+    <link href="bootstrap/js/bootstrap.js" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+
+      body
+       {
+        background-image: url(blur1.jpg);
+        background-repeat: no-repeat;
+        background-size:100vw 100vw  ;
+       }
+        
+        .mandatory{
+                    position:all;
+                    margin-top:-70px;
+                    font-size: 40px;
+                    left:300px;
+                   }
+        .imageshow {
+                       position:relative;
+                       background-color: #7fff8e;
+                       box-shadow: 5px 5px 10px #e2e2e2;
+                       width:90vw;
+                       height:29vw;
+
+                    }
+        .imageshow1 {
+                       position: absolute;
+                       margin-top:20px ;
+                       left:2vw;
+                    }
+      .imageshow2 {
+                       position: absolute;
+                       margin-top:20px ;
+                       left:24vw;
+                    }
+      .imageshow3 {
+                       position: absolute;
+                      margin-top: 20px;
+                       left:46vw;
+                    }
+    .imageshow4 {
+                       position: absolute;
+                       margin-top:20px ;
+                       left:68vw;
+                    }
+    </style>
+	
+   <script type="text/javascript">
+   function substitute(){
+                var myvalue = document.getElementById('prashant').value;
+                
+if (myvalue.length == 0 ) 
+      {
+  alert('please enter a real value in text box!');
+return;
+        } 
+ }      
+ function substitute1(){
+                var myvalue = document.getElementById('prashant1').value;
+                
+if (myvalue.length == 0 ) 
+      {
+  alert('please enter a real value in text box!');
+return;
+        } 
+ }      
+ function substitute2(){
+                var myvalue = document.getElementById('prashant2').value;
+                
+if (myvalue.length == 0 ) 
+      {
+  alert('please enter a real value in text box!');
+return;
+        } 
+ }  
+  
+ </script>
+
+ <script type="text/javascript">
+  function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+  </script>
+   <script type="text/javascript">
+     function readURL1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah1')
+                    .attr('src', e.target.result)
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+  </script>
+   <script type="text/javascript">
+     function readURL2(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah2')
+                    .attr('src', e.target.result)
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+  </script>
+   <script type="text/javascript">
+     function readURL3(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah3')
+                    .attr('src', e.target.result)
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+
+</head>
+<body>
+
+    
+    
+<div class="container">
+    <div class="form-group row">
+  <div class="col-xs-4">
+    
+    <input class="btn btn-lg btn-success btn-block" type="file" id="prashant" onchange="readURL(this);">
+  </div>
+  <div class="col-xs-3">
+    <input class="btn btn-lg btn-success btn-block" type="submit" value="Upload Image" onclick="substitute()" >
+  </div>
+</div>
+<div style="color: red;" class="mandatory">*</div>
+ <div class="form-group row">
+  <div class="col-xs-4">
+    
+    <input class="btn btn-lg btn-success btn-block" type="file" id="prashant1" onchange="readURL1(this);" >
+  </div>
+  <div class="col-xs-3">
+    <input class="btn btn-lg btn-success btn-block" type="submit" value="Upload Signature" onclick="substitute1()" >
+</div></div>
+<div style="color: red;" class="mandatory">*</div>
+ <div class="form-group row">
+  <div class="col-xs-4">
+    
+    <input class="btn btn-lg btn-success btn-block" type="file" id="prashant2" onchange="readURL2(this);" >
+  </div>
+  <div class="col-xs-3">
+    <input class="btn btn-lg btn-success btn-block" type="submit" value="Upload 12th Admit card" onclick="substitute2()" >
+</div></div>
+<div style="color: red;" class="mandatory">*</div>
+<div class="form-group row">
+  <div class="col-xs-4">
+    
+    <input class="btn btn-lg btn-success btn-block" type="file" id="prashant3" onchange="readURL3(this);" >
+  </div>
+  <div class="col-xs-3">
+    <input class="btn btn-lg btn-success btn-block" type="submit" value="Upload caste certificate" onclick="substitute3()" >
+</div></div>
+
+
+<center> <div class="form-group row">
+  <div class="col-xs-3">
+    
+    <button class="btn btn-lg btn-success btn-block">SAVE</button>
+  </div>
+  <div class="col-xs-3">
+  <a href="form.html"> <button class="btn btn-lg btn-success btn-block">PREVIOUS</button></a>
+  </div>
+  <div class="col-xs-3">
+    <button class="btn btn-lg btn-success btn-block">NEXT</button>
+  </div>
+</div></center>
+
+<div class="imageshow">
+<div class="imageshow1">
+  <img id="blah" src="#" alt="your image" style="width: 20vw;height:25vw;" /><br>
+ <span > <b>Candidate's image</b></span> 
+</div>
+<div class="imageshow2">
+  <img id="blah1" src="#" alt="your image" style="width: 20vw;height:25vw;" /><br>
+ <span > <b>Candidate's Signature</b></span> 
+</div>
+<div class="imageshow3">
+  <img id="blah2" src="#" alt="your image" style="width: 20vw;height:25vw;" /><br>
+ <span > <b>Candidate's 12th Admit card</b></span> 
+</div>
+<div class="imageshow4">
+  <img id="blah3" src="#" alt="your image" style="width: 20vw;height:25vw;" /><br>
+ <span > <b>Candidate's OBC</b></span> 
+</div>
+</div>
+</div>
+
+</body> 
+</html>

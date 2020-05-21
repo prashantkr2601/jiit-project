@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>side nav bar</title>
+  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+  <script type="text/javascript" src="jquery.min.js"></script>
+   <script type="text/javascript" src="materialize/js/materialize.js"></script>
+   <script type="text/javascript" src="materialize/js/materialize.min.js">
+   </script>
+   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+  function hideme(){
+    var x =document.getElementById('aap').className = 'waa1';
+  };
+</script>
+   <script type="text/javascript">
+$(document).ready(function(){
+    $("button5").click(function(){
+        $("span123").animate({
+            width: 'toggle'
+        });
+    });
+});
+</script> 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+<style type="text/css">
+.modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  .waa1 {
+    opacity:1;
+}
+  #side_nav_bar{
+                  background:white;
+                  height:670px;
+                  width:25vw;
+                  position:absolute;
+                  margin-top:68px;
+                  left: 0px;
+                   background-image: url(blur1.jpg);
+              background-size:100% 40% ;
+              background-repeat: no-repeat;
+               }
+   #b1 {
+          position: absolute;
+          margin-top:1vw;
+          left:8vw;
+          height: 10vw;
+          width: 10vw;
+         }
+    #b2 {
+          position: absolute;
+          margin-top:12vw;
+          left:8vw;
+          font-size:1.3vw;
+          color: white;
+         }
+  #b3 {   position: absolute;
+         margin-top:240px;
+         width: 20vw;
+         }
+</style>
+<style type="text/css">
+  div12345 {
+    opacity:1;
+    transition:opacity 500ms;
+}
+div12345.waa {
+    opacity:0;
+}
+</style>
+<script type="text/javascript">
+    setTimeout(function(){
+    document.getElementById('aap').className = 'waa';
+},1);
+</script>
+
+</head>
+<body style="background-color: black;">
+<div class="container">
+  <div id="b4">
+  <button5 style="width:100px;" class="btn waves-effect waves-light" onclick="hideme()"> <span class="glyphicon glyphicon-align-justify"></span></button5> </div>
+
+  <div style="position: absolute;width:60vw;max-height:140vh;height:96vh; left:12vw;margin-top:100px;" class="modal fade" id="myModal" role="dialog" >
+    <div  class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+               <div class="form-group">
+              <label for="usrname"><span style="font-size: 15px;color: black;"><span class="glyphicon glyphicon-user"></span>&nbsp;<b> Username</b></span></label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter Username">
+            </div>
+
+            <div class="form-group">
+              <label for="usrname"><span style="font-size: 15px;color: black;"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;<b>Email</b></span></label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span style="font-size: 15px;color: black;"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;<b>Password</b></span></label>
+              <input type="password" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="form.html">Sign Up</a></p>
+          <p>Forgot <a href="forget_password.html">Password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div12345  class="waa1" id="aap"> 
+  <span123 id="side_nav_bar" >
+  <img src="my photo.jpg" id="b1" class="img-circle" alt="Cinque Terre">
+   <div id="b2">
+    Prashant Kumar<br>
+    prashantkr2601@gmail.com
+  </div> 
+   
+    <div id="b3" >
+    <a href="#" ><button style="width:25vw;" class="btn waves-effect waves-light" >HOME</button></a><br>
+    <a href="#"><button style="width:25vw;"  class="btn waves-effect waves-light">ABOUT US</button></a><br>
+    <a href="#"><button style="width:25vw;" class="btn waves-effect waves-light">ACADEMICS</button></a><br>
+    <a href="#"> <button style="width:25vw;" class="btn waves-effect waves-light">R&D</button></a><br>
+    <a href="#">  <button style="width:25vw;" class="btn waves-effect waves-light">ADMISSION</button></a><br>
+    <a href="#">  <button style="width:25vw;" class="btn waves-effect waves-light">PLACEMENTS</button></a><br>
+    <a href="#"> <button style="width:25vw;"  class="btn waves-effect waves-light">STUDENT LIFE</button></a><br>
+   <a href="#"> <button style="width:25vw;" class="btn waves-effect waves-light">CONTACT US</button></a><br>
+    <a href="#"> <button style="width:25vw;" class="btn waves-effect waves-light">RESOURCES</button></a><br>
+    <a href="#"> <button style="width:25vw;" class="btn waves-effect waves-light">ALUMNI</button></a><br>
+    <button style="width:25vw;" class="btn waves-effect waves-light" id="myBtn">SIGN IN</button><br>
+    <a href="form.html"><button  style="width:25vw;" class="btn waves-effect waves-light" >SIGN UP</button></a>
+  </div>
+</span123>
+</div12345>
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>   
